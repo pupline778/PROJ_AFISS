@@ -14,14 +14,49 @@
   <name>AFISS_CORE Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
+  <!-- 屬性宣告 -->
+  <properties>
+  	<!-- Spring 版本 -->
+	<org.springframework-version>5.0.2.RELEASE</org.springframework-version>
+  </properties>
+  
+  <!-- 套件管理 -->
   <dependencies>
+  	<!-- t -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    
+    <!-- 共通支援組件 -->
+    <dependency>
+      <groupId>oy-common-util</groupId>
+      <artifactId>oy-common-util</artifactId>
+      <version>1.0.0</version>
+    </dependency>
+    
+    <!-- Spring MVC -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${org.springframework-version}</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-web</artifactId>
+        <version>${org.springframework-version}</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>${org.springframework-version}</version>
+    </dependency>
   </dependencies>
+  
   <build>
     <finalName>AFISS_CORE</finalName>
   </build>
